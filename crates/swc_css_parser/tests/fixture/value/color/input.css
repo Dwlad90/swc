@@ -94,6 +94,8 @@
 .oklab {
     color: oklab(40.101% 0.1147 0.0453);
     color: oklab(var(--a) var(--b) var(--c));
+    color: oklab(from #0000FF calc(l + 0.1) a b / calc(alpha * 0.9));
+    color: oklab(from green l a b / 0.5)
 }
 
 .oklch {
@@ -101,6 +103,8 @@
     color: oklch(42.1% 0.192 328.6);
     color: oklch(var(--a) var(--b) var(--c));
     color: oklch(var(--a) var(--b) var(--c) / var(--d));
+    color: oklch(from #000 calc(l + 0.2) c h);
+    color: oklch(from #021310 l c h / 0.9);
 }
 
 .color {
